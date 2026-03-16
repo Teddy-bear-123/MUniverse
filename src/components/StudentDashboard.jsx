@@ -16,7 +16,7 @@ const StudentDashboard = () => {
                 End Semester Exam schedule is out.
               </li>
               <li className="text-sm p-3 bg-gray-50 rounded border-l-4 border-blue-500">
-                Holiday declared for upcoming festival.
+                Holiday declared for upcoming festival (kolla's birthday).
               </li>
             </ul>
           </div>

@@ -34,6 +34,7 @@ const MainLayout = ({ children, role = "Admin" }) => {
           <div className="text-sm font-medium text-gray-500">
             University Intranet Portal / <span className="text-gray-900">{role} Dashboard</span>
           </div>
+          <div className="text font-medium text-gray-500"> Done by Kolla da great</div>
           <div className="flex items-center space-x-4">
             <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs">
               AD

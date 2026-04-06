@@ -1,7 +1,7 @@
 "use client";
 
 import ClerkUserButton from "@/components/ClerkUserButton";
-import SyncUser from "@/components/SyncUser";
+import NotificationBell from "@/components/NotificationBell";
 import { api } from "@/convex/_generated/api";
 import { useQuery } from "convex/react";
 import Link from "next/link";
@@ -80,8 +80,6 @@ export default function MainLayout({ children, roleLabel }: MainLayoutProps) {
 
   return (
     <div className="h-dvh overflow-hidden bg-black text-zinc-100">
-      <SyncUser />
-
       <div className="flex h-full w-full">
         <aside
           className={`fixed inset-y-0 left-0 z-40 flex w-72 flex-col border-r border-white/15 bg-black p-6 transition-transform duration-200 md:translate-x-0 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
@@ -154,6 +152,7 @@ export default function MainLayout({ children, roleLabel }: MainLayoutProps) {
             </div>
 
             <div className="flex items-center gap-3">
+              <NotificationBell />
               <div className="hidden text-right md:block">
                 <p className="text-sm font-semibold text-white">{userName}</p>
                 <p className="text-xs text-zinc-400">{userIdentifier}</p>
